@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:import/recommended",
-    "plugin:import/warnings",
-    "prettier",
-    "plugin:tailwindcss/recommended"
-  ],
+  "extends": ["next/core-web-vitals", "plugin:import/recommended", "plugin:import/warnings", "prettier", "plugin:tailwindcss/recommended"],
   "ignorePatterns": ["*config.js"],
   "rules": {
     "import/order": [
@@ -15,6 +9,7 @@
           "order": "asc"
         }
       }
-    ]
+    ],
+    "tailwindcss/no-custom-classname": false
   }
 }
